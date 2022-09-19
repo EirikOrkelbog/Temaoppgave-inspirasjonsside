@@ -59,7 +59,42 @@ font-size: 0.702rem;
 
 
 .grid__number-wrap {
-	display: none;
+	visibility: hidden;
 }
 
+/* size medium (ipads)*/
+@media screen and (min-width: 768px) {
+	section {
+		grid-template-columns: repeat(2, 1.5fr 0.1fr);
+	}
 
+	img {
+		height: 30vh;
+	}
+
+	.grid__element {
+		position: relative;;
+	}
+	.grid__number-wrap {
+		visibility: visible; 
+		transform: rotate(270deg);
+		font-size: 0.7rem;
+		position: absolute;
+		left: -0.7rem;
+´
+		
+	}
+
+
+}
+
+/* size large (desktops)
+@media screen and (min-width: 1200px) {
+	section {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	img {
+		height: 30vh;
+	}
+} */
