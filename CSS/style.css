@@ -10,6 +10,9 @@ html {
 body {
 	background-color: var(--primary-color);
 	font-family: "Founders Grotesk", sans-serif;
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
 }
 
 main {
@@ -54,6 +57,7 @@ a {
 .header__section {
 	width: 90%;
 	margin: 1rem auto;
+	padding: 5rem 0;
 }
 
 
