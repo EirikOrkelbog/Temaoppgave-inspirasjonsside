@@ -96,7 +96,7 @@ font-size: 0.702rem;
 		position: absolute;
 		left: -0.8rem;
 	}
-
+}
 
 /* size large (desktops) */
 @media screen and (min-width: 1200px) {
@@ -110,12 +110,8 @@ font-size: 0.702rem;
 		transition-delay: 0.1s;
 	}
 
-	/* .grid__element:hover {
-		transform: scale(1.1);
-		border-radius: 20%;
-		transition: 5ms;
-	} */
-
 	img:hover {
 		border-radius: 40%;
 	}
+
+}
