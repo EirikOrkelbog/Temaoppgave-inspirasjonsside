@@ -12,6 +12,9 @@ html {
 body {
 	background-color: var(--primary-color);
 	font-family: "Founders Grotesk", sans-serif;
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
 }
 
 main {
@@ -39,6 +42,28 @@ a {
 	color: var(--font-color)
 }
 
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 3rem;
+}
+
+.nav__list {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.header__section {
+	width: 90%;
+	margin: 1rem auto;
+	padding: 5rem 0;
+}
+
+
+
 
 .description {
 margin-top: 1%;
@@ -58,6 +83,24 @@ font-size: 0.702rem;
 .grid__number-wrap {
 	visibility: hidden;
 }
+
+.footer {
+	width: 90%;
+	margin: 1rem auto;
+}
+
+.footer__container {
+	border-top: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.footer__nav {
+	margin: 1rem 0;
+}
+
 
 /* size medium (tablet)*/
 @media screen and (min-width: 768px) {
@@ -80,6 +123,11 @@ font-size: 0.702rem;
 		position: absolute;
 		left: -0.8rem;
 	}
+
+
+	.footer__container {
+		flex-direction: row;
+		justify-content: space-between;
 
 }
 
