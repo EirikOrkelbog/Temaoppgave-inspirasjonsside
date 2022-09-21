@@ -37,10 +37,6 @@ a {
 	color: var(--font-color)
 }
 
-.grid__element {
-	margin-bottom: 10%;
-}
-
 
 .description {
 margin-top: 1%;
@@ -57,7 +53,6 @@ font-size: 0.702rem;
 	top: -2px;
 }
 
-
 .grid__number-wrap {
 	visibility: hidden;
 }
@@ -65,7 +60,7 @@ font-size: 0.702rem;
 /* size medium (tablet)*/
 @media screen and (min-width: 768px) {
 	section {
-		grid-template-columns: repeat(2, 1.5fr 0.1fr);
+		grid-template-columns: repeat(2, 1.5fr 0.05fr);
 	}
 
 	img {
@@ -73,24 +68,39 @@ font-size: 0.702rem;
 	}
 
 	.grid__element {
-		position: relative;;
+		position: relative;
+		margin-bottom: 10%;
 	}
 	.grid__number-wrap {
 		visibility: visible; 
 		transform: rotate(270deg);
-		font-size: 0.6rem;
+		font-size: 0.624rem;
 		position: absolute;
-		left: -0.7rem;
+		left: -0.8rem;
 	}
 
 
 /* size large (desktops) */
 @media screen and (min-width: 1200px) {
 	section {
-		grid-template-columns: repeat(3, 1.5fr 0.1fr);
+		grid-template-columns: repeat(3, 1.5fr 0.04fr);
 	}
 
 	img {
 		height: 30vh;
+		transition: border-radius 0.3s ease-in-out;
+		transition-delay: 0.1s;
 	}
+
+	/* .grid__element:hover {
+		transform: scale(1.1);
+		border-radius: 20%;
+		transition: 5ms;
+	} */
+
+	img:hover {
+		border-radius: 40%;
+	}
+
+
 }
