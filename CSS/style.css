@@ -2,7 +2,6 @@
 	--primary-color: #F0F0F0;
 	--secondary-color: #65756B
 	--font-color: #2A2A2A
-
 }
 
 html {
@@ -45,7 +44,9 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 3rem;
+	width: 90%;
+	margin: 1rem auto;
+	padding: 1rem 15px 0 0;
 }
 
 .nav__list {
