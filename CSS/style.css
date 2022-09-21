@@ -1,6 +1,7 @@
 :root {
 	--primary-color: #F0F0F0;
-	--font-color: #2A2A2A
+	--secondary-color: #65756B;
+	--font-color: #2A2A2A;
 }
 
 html {
@@ -60,7 +61,7 @@ font-size: 0.702rem;
 /* size medium (tablet)*/
 @media screen and (min-width: 768px) {
 	section {
-		grid-template-columns: repeat(2, 1.5fr 0.05fr);
+		grid-template-columns: repeat(2, 1.5fr 0.06fr);
 	}
 
 	img {
@@ -83,7 +84,7 @@ font-size: 0.702rem;
 /* size large (desktops) */
 @media screen and (min-width: 1200px) {
 	section {
-		grid-template-columns: repeat(3, 1.5fr 0.04fr);
+		grid-template-columns: repeat(3, 1.5fr 0.05fr);
 	}
 
 	img {
@@ -91,12 +92,6 @@ font-size: 0.702rem;
 		transition: border-radius 0.3s ease-in-out;
 		transition-delay: 0.1s;
 	}
-
-	/* .grid__element:hover {
-		transform: scale(1.1);
-		border-radius: 20%;
-		transition: 5ms;
-	} */
 
 	img:hover {
 		border-radius: 40%;
