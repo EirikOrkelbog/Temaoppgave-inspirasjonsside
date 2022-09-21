@@ -50,6 +50,12 @@ a {
 	list-style: none;
 }
 
+.header__section {
+	width: 90%;
+	margin: 1rem auto;
+}
+
+
 .description {
 margin-top: 1%;
 position: relative;
@@ -113,6 +119,3 @@ font-size: 0.702rem;
 	img:hover {
 		border-radius: 40%;
 	}
-
-
-}
