@@ -12,13 +12,13 @@
 
 	<body>
 		<header>
-			<nav class="nav">
+			<nav class="nav" id="nav">
 				<a href="index.html"><img src="" alt="logo">Logo</a>
 
 				<ul class="nav__list">
-					<li class="nav__item"><a href="" class="nav__link">Sites</a></li>
-					<li class="nav__item"><a href="" class="nav__link">About</a></li>
-					<li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+					<li class="nav__item"><a href="#grid" class="nav__link">Sites</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -33,7 +33,7 @@
 
 		<!-- MAIN MED GRID -->
 		<main>
-			<section class="grid__template">
+			<section class="grid__template" id="grid">
 				<div class="grid__element">
 					<div class="grid__image">
 						<!-- <iframe src="https://bakkenbaeck.com/" frameborder="0"></iframe> -->
@@ -248,13 +248,15 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="section__about" id="about"></section>
 		</main>
 
 		<footer class="footer">
 			<div class="footer__container">
 				<a href="index.html"><img src="" alt="logo">Logo</a>
 
-				<nav class="footer__nav">
+				<nav class="footer__nav" id="footer">
 					<ul class="footer__list nav__list">
 						<li><a href="" class="social__links">Facebook</a></li>
 						<li><a href="" class="social__links">Instagram</a></li>
@@ -262,7 +264,7 @@
 					</ul>
 				</nav>
 
-				<a href="#" class="footer__scroll-top">BACK TO TOP</a>
+				<a href="#nav" class="footer__scroll-top">BACK TO TOP</a>
 			</div>
 		</footer>
 	</body>
