@@ -1,7 +1,7 @@
 :root {
 	--primary-color: #F0F0F0;
-	--secondary-color: #65756B
-	--font-color: #2A2A2A
+	--secondary-color: #CCC4B9;
+	--font-color: #2A2A2A;
 }
 
 html {
@@ -13,6 +13,7 @@ body {
 	font-family: "Founders Grotesk", sans-serif;
 	max-width: 1900px;
 	margin: auto;
+	color: var(--font-color);
 }
 
 main {
@@ -27,6 +28,7 @@ img {
 
 h1 {
 	margin-bottom: 1rem;
+	font-size: 5rem;
 }
 
 h2 {
@@ -47,7 +49,6 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
-	background-color: red;
 }
 
 .nav__list {
@@ -78,7 +79,7 @@ a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 3rem 0;
+	padding: 7rem 0 3rem 0;
 }
 
 .description {
@@ -133,12 +134,19 @@ font-size: 0.702rem;
 		inset: 0 0 0 0;
 		background: #65756B;
 		z-index: 9;
+		transform: translateY(-100%);
+		transition: transform 350ms ease-out;
 	}
 
+	.nav[data-visible="true"] {
+		transform: translateY(0%);
+	}
+	
 	.nav__list {
 		flex-direction: column;
 		justify-content: center;
 	}
+
 
 	.logo {
 		position: absolute;
@@ -150,17 +158,46 @@ font-size: 0.702rem;
 		font-size: 4rem;
 	}
 
+	.nav__link:hover {
+		color: var(--secondary-color);
+		transition-delay: .1s;
+	}
+
+	.nav__link-home {
+		color: var(--secondary-color);
+	}
+
+	.nav__link-home:hover {
+		color: var(--font-color);
+	}
+
 	.mobile__nav-toggle {
-		position: absolute;
 		display: block;
-		width: 1rem;
-		background: url(../Assets/Images/hamburger-menu.svg);
+		position: absolute;
+		width: 4rem;
+		height: 1rem;
+		background-color: transparent;
+		background-image: url(../Assets/Images/Menu.svg);
 		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 99;
 		border: none;
-		aspect-ratio: 1;
 		top: 5%;
 		right: 5%;
 	}
+
+	.mobile__nav-toggle[aria-expanded="true"] {
+		background-image: url(../Assets/Images/close.svg);
+	}
+
+	.mobile__nav-toggle:hover {
+		cursor: pointer;
+	}
+
+	.mobile__nav-toggle[aria-expanded="true"]:hover {
+		cursor: pointer;
+	}
+
 
 }
 
@@ -171,7 +208,11 @@ font-size: 0.702rem;
 	img {
 		height: 30vh;
 	}
-	
+
+	.nav__home {
+		display: none;
+	}
+
 	
 	.grid__template {
 		grid-template-columns: repeat(2, 1.5fr 0.06fr);
