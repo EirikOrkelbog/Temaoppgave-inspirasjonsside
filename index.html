@@ -11,9 +11,11 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="header">
 			<nav class="nav" id="nav">
-				<a href="index.html"><img src="" alt="logo">Logo</a>
+				<a href="index.html" class="logo"><img src="" alt="logo">Logo</a>
+
+				<button class="mobile__nav-toggle" aria-controls="nav" aria-expanded="false"></button>
 
 				<ul class="nav__list">
 					<li class="nav__item"><a href="#grid" class="nav__link">Sites</a></li>
@@ -21,18 +23,18 @@
 					<li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
 				</ul>
 			</nav>
-
+		</header>
+		
+		<!-- MAIN MED GRID -->
+		<main>
 			<section class="header__section">
 				<div class="section__container-centered">
 					<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-
+	
 					<p>Lorem ipsum dolor sit amet</p>
 				</div>
 			</section>
-		</header>
 
-		<!-- MAIN MED GRID -->
-		<main>
 			<section class="grid__template" id="grid">
 				<div class="grid__element">
 					<div class="grid__image">

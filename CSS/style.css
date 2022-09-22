@@ -46,9 +46,8 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
-	margin: 1rem auto;
-	padding: 1rem 15px 0 0;
+	padding: 1rem;
+	background-color: red;
 }
 
 .nav__list {
@@ -56,6 +55,10 @@ a {
 	gap: 1rem;
 	list-style: none;
 	text-transform: uppercase;
+}
+
+.mobile__nav-toggle {
+	display: none;
 }
 
 .header__section {
@@ -120,16 +123,61 @@ font-size: 0.702rem;
 }
 
 
+
+
+/* Navigation */
+@media (max-width: 768px) {
+	
+	.nav {
+		position: fixed;
+		inset: 0 0 0 0;
+		background: #65756B;
+		z-index: 9;
+	}
+
+	.nav__list {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.logo {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+	}
+
+	.nav__item {
+		font-size: 4rem;
+	}
+
+	.mobile__nav-toggle {
+		position: absolute;
+		display: block;
+		width: 1rem;
+		background: url(../Assets/Images/hamburger-menu.svg);
+		background-repeat: no-repeat;
+		border: none;
+		aspect-ratio: 1;
+		top: 5%;
+		right: 5%;
+	}
+
+}
+
+
 /* size medium (tablet)*/
 @media screen and (min-width: 768px) {
+	
+	img {
+		height: 30vh;
+	}
+	
+	
 	.grid__template {
 		grid-template-columns: repeat(2, 1.5fr 0.06fr);
 		margin-left: 10px;
 	}
 
-	img {
-		height: 30vh;
-	}
 
 	.grid__element {
 		position: relative;
