@@ -59,7 +59,7 @@ a {
 	text-transform: uppercase;
 }
 
- .nav__link-border::after {
+ .nav__link-border::after, .social__link-border::after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -71,7 +71,7 @@ a {
 	transition-delay: .1s;
  }
 
- .nav__link-border:hover::after {
+ .nav__link-border:hover::after, .social__link-border:hover::after {
 	transform-origin: bottom left;
 	transform: scaleX(1);
  }
@@ -192,6 +192,11 @@ font-size: 0.702rem;
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	.nav__link-border::after {
+		content: none;
+	}
+
 	
 	.logo__nav-toggle {
 		display: block;
