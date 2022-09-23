@@ -28,11 +28,12 @@ img {
 
 h1 {
 	margin-bottom: 1rem;
-	font-size: 5rem;
+	font-size: 3rem;
 }
 
 h2 {
 	margin-bottom: 1rem;
+	font-size: 2rem;
 }
 	
 p {
@@ -76,8 +77,12 @@ a {
 }
 
 .header__section {
-	width: 90%;
 	margin: 1rem auto;
+	padding: 6rem 0;
+}
+
+.header__paragraph, .about__paragraph {
+	text-transform: uppercase;
 }
 
 .grid__template {
@@ -92,7 +97,8 @@ a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 7rem 0 3rem 0;
+	padding: 2rem;
+	border: 8px solid var(--font-color);
 }
 
 .description {
@@ -115,8 +121,8 @@ font-size: 0.702rem;
 }
 
 .section__about {
-	max-width: 30rem;
 	margin: auto;
+	padding: 4rem 0;
 }
 
 .footer {
@@ -258,7 +264,7 @@ font-size: 0.702rem;
 	
 	.grid__template {
 		grid-template-columns: repeat(2, 1.5fr 0.06fr);
-		margin-left: 10px;
+		margin-right: -22px;
 	}
 
 
@@ -290,6 +296,10 @@ font-size: 0.702rem;
 	.nav {
 		padding: 2rem 7rem;
 	}
+
+	.header__section {
+		padding: 8rem 0;
+	}
 	
 	.grid__template {
 		grid-template-columns: repeat(3, 1.5fr 0.05fr);
@@ -303,6 +313,14 @@ font-size: 0.702rem;
 
 	img:hover {
 		border-radius: 40%;
+	}
+
+	.section__container-centered {
+		padding: 4rem 20rem;
+	}
+
+	.section__about {
+		padding: 8rem 0;
 	}
 
 
