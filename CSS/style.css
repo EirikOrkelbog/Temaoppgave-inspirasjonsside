@@ -146,12 +146,17 @@ font-size: 0.702rem;
 		flex-direction: column;
 		justify-content: center;
 	}
-
-
-	.logo {
-		position: absolute;
+	
+	.logo__nav-toggle {
+		display: block;
+		position: fixed;
+		z-index: 99;
 		top: 5%;
 		left: 5%;
+	}
+	
+	.logo {
+		display: none;
 	}
 
 	.nav__item {
@@ -173,7 +178,7 @@ font-size: 0.702rem;
 
 	.mobile__nav-toggle {
 		display: block;
-		position: absolute;
+		position: fixed;
 		width: 4rem;
 		height: 1rem;
 		background-color: transparent;
@@ -209,7 +214,25 @@ font-size: 0.702rem;
 		height: 30vh;
 	}
 
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		width: 100%;
+		max-width: 1900px;
+		margin: auto;
+		padding: 2rem 5rem;
+		background-color: var(--primary-color);
+		top: 0;
+		z-index: 99;
+	}
+
+
 	.nav__home {
+		display: none;
+	}
+
+	.logo__nav-toggle {
 		display: none;
 	}
 
@@ -243,6 +266,12 @@ font-size: 0.702rem;
 
 /* size large (desktops) */
 @media screen and (min-width: 1200px) {
+	
+	
+	.nav {
+		padding: 2rem 7rem;
+	}
+	
 	.grid__template {
 		grid-template-columns: repeat(3, 1.5fr 0.05fr);
 	}
