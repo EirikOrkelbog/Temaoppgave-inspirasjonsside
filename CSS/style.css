@@ -258,6 +258,7 @@ font-size: 0.702rem;
 }
 
 
+
 /* size medium (tablet)*/
 @media screen and (min-width: 768px) {
 	
@@ -343,6 +344,10 @@ font-size: 0.702rem;
 
 	.section__about {
 		padding: 8rem 0;
+	}
+
+	.grid__element-extra {
+		display: none;
 	}
 
 
