@@ -59,6 +59,23 @@ a {
 	text-transform: uppercase;
 }
 
+ .nav__link-border::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #000;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.3s;
+	transition-delay: .1s;
+ }
+
+ .nav__link-border:hover::after {
+	transform-origin: bottom left;
+	transform: scaleX(1);
+ }
+
 .mobile__nav-toggle {
 	display: none;
 }
