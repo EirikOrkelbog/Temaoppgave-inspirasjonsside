@@ -71,6 +71,10 @@ a {
 	z-index: 9;
 }
 
+.logo, .footer__logo, .logo__nav-toggle {
+	font-weight: 700;
+}
+
 .header__section {
 	width: 90%;
 	margin: 1rem auto;
@@ -248,10 +252,6 @@ font-size: 0.702rem;
 
 
 	.nav__home {
-		display: none;
-	}
-
-	.logo__nav-toggle {
 		display: none;
 	}
 
