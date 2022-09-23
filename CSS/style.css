@@ -132,6 +132,16 @@ font-size: 0.702rem;
 	margin: 1rem 0;
 }
 
+.footer__list {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.footer__scroll-top {
+	font-weight: 700;
+}
 
 
 
