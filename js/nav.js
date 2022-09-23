@@ -1,3 +1,4 @@
+/* Mobile menu full screen */
 const nav = document.querySelector(".nav");
 const navToggle = document.querySelector(".mobile__nav-toggle");
 
@@ -14,6 +15,7 @@ navToggle.addEventListener("click", () => {
 
 });
 
+/* Mobile menu full screen link to sites */
 const sites = document.querySelector(".sites");
 
 
@@ -30,7 +32,7 @@ sites.addEventListener("click", () => {
 });
 
 
-
+/* Mobile menu full screen link to about */
 const about = document.querySelector(".about");
 
 
@@ -47,6 +49,7 @@ about.addEventListener("click", () => {
 });
 
 
+/* Mobile menu full screen link to contact */
 const contact = document.querySelector(".contact");
 
 
