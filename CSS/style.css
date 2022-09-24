@@ -14,6 +14,7 @@ body {
 	max-width: 1900px;
 	margin: auto;
 	color: var(--font-color);
+	text-transform: uppercase;
 }
 
 main {
@@ -28,12 +29,17 @@ img {
 
 h1 {
 	margin-bottom: 1rem;
-	font-size: 3rem;
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 h2 {
-	margin-bottom: 1rem;
-	font-size: 2rem;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+h4 {
+	font-weight: 400;
 }
 	
 p {
@@ -58,7 +64,6 @@ a {
 	display: flex;
 	gap: 1rem;
 	list-style: none;
-	text-transform: uppercase;
 }
 
  .nav__link-border::after, .social__link-border::after {
@@ -100,10 +105,6 @@ a {
 .header__section {
 	margin: 1rem auto;
 	padding: 6rem 0;
-}
-
-.header__paragraph, .about__paragraph {
-	text-transform: uppercase;
 }
 
 .section__container-centered {
@@ -173,7 +174,6 @@ font-size: 0.702rem;
 	display: flex;
 	gap: 1rem;
 	list-style: none;
-	text-transform: uppercase;
 }
 
 .footer__scroll-top {
