@@ -322,6 +322,28 @@ font-size: 0.702rem;
 @media screen and (min-width: 1200px) {
 	
 	
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	img {
+		height: 30vh;
+		transition: border-radius 0.3s ease-in-out;
+		transition-delay: 0.1s;
+	}
+
+	img:hover {
+		border-radius: 40%;
+	}
+
 	.nav {
 		padding: 2rem 7rem;
 	}
@@ -334,15 +356,6 @@ font-size: 0.702rem;
 		grid-template-columns: repeat(3, 1.5fr 0.05fr);
 	}
 
-	img {
-		height: 30vh;
-		transition: border-radius 0.3s ease-in-out;
-		transition-delay: 0.1s;
-	}
-
-	img:hover {
-		border-radius: 40%;
-	}
 
 	.section__container-centered {
 		padding: 4rem 20rem;
