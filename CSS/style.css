@@ -108,7 +108,7 @@ a {
 /* Header */
 .header__section {
 	margin: 1rem auto;
-	padding: 6rem 0;
+	padding: 6rem 0 0 0;
 }
 
 .section__container-centered {
@@ -127,6 +127,7 @@ a {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(1, 1fr);
+	padding-top: 6rem;
 }
 
 .description {
@@ -353,7 +354,7 @@ font-size: 0.702rem;
 	}
 
 	.header__section {
-		padding: 8rem 0;
+		margin-top: 4rem;
 	}
 	
 	.grid__template {
@@ -366,7 +367,7 @@ font-size: 0.702rem;
 	}
 
 	.section__about {
-		padding: 8rem 0;
+		margin-top: 1rem;
 	}
 
 	.grid__element-extra {
