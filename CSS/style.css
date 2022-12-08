@@ -51,9 +51,6 @@ a {
 	color: var(--font-color)
 }
 
-.line__through {
-	text-decoration: underline;
-}
 
 
 /* Navigation */
@@ -119,6 +116,10 @@ a {
 	text-align: center;
 	padding: 2rem;
 	border: 8px solid var(--font-color);
+}
+
+.h2__seperate {
+	display: block;
 }
 
 
@@ -295,6 +296,10 @@ font-size: 0.702rem;
 
 	.nav__home {
 		display: none;
+	}
+
+	.h2__seperate {
+		display: inline;
 	}
 	
 	.grid__template {
